@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Form from "next/form";
 import Services from "./_sections/services";
-import FeaturesBenefits from "./_sections/features&Benefits";
 import TrustSocialProof from "./_sections/trust&SocialProof";
 import Footer from "./ui/components/Footer";
 import OurTeam from "@/app/_sections/ourTeam";
@@ -45,7 +44,6 @@ export default function Home() {
       <Services />
       <TrustSocialProof />
       <OurTeam />
-      {/*<FeaturesBenefits />*/}
       <div>
         <Wrapper>
           <div className="">
