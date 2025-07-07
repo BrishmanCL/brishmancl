@@ -37,7 +37,7 @@ export default function Services() {
                             </Tab>
                             <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
                                 <MdDesignServices className="mx-auto text-5xl text-[#003697]" />
-                                <span className="text-[#003697]">Automatización</span>
+                                <span className="text-[#003697]">Infraestructura TI</span>
                             </Tab>
                         </TabList>
                         <TabPanels className="mb-20 mt-10">
