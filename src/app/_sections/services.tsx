@@ -23,19 +23,19 @@ export default function Services() {
                     </p>
                     <TabGroup className="">
                         <TabList className="flex flex-wrap justify-center gap-8 mt-7 mb-7">
-                            <Tab className="bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                            <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
                                 <FaPager className="mx-auto text-5xl text-[#003697]" />
                                 <span className="text-[#003697]">Web</span>
                             </Tab>
-                            <Tab className="bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                            <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
                                 <MdDesignServices className="mx-auto text-5xl text-[#003697]" />
                                 <span className="text-[#003697]">Diseño</span>
                             </Tab>
-                            <Tab className="bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                            <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
                                 <MdDesignServices className="mx-auto text-5xl text-[#003697]" />
-                                <span className="text-[#003697]">Integración</span>
+                                <span className="text-[#003697]">Sistemas</span>
                             </Tab>
-                            <Tab className="bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                            <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
                                 <MdDesignServices className="mx-auto text-5xl text-[#003697]" />
                                 <span className="text-[#003697]">Automatización</span>
                             </Tab>
@@ -44,14 +44,14 @@ export default function Services() {
                             <TabPanel className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
                                 <div className="xl:row-span-2 xl:h-auto xl:flex-col  lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <Image
-                                        className="my-auto mx-auto w-full md:w-1/2"
-                                        src="https://img1.wsimg.com/cdnassets/transform/ab758ae9-0592-4e88-8623-409257c378fc/intl-img-hp-recore-cctld-small"
+                                        className="my-auto mx-auto w-full"
+                                        src="/images/Presencia en Linea de tu negocio.jpg"
                                         alt=""
                                         width={426}
-                                        height={317}
+                                        height={400}
                                     />
                                     <div className="">
-                                        <h4 className="font-bold text-2xl text-blue-950">
+                                        <h4 className="font-bold text-2xl text-[#003697]">
                                             Presencia en Línea
                                         </h4>
                                         <p className="text-black">
@@ -68,11 +68,11 @@ export default function Services() {
                                     </div>
                                 </div>
                                 <div className="xl:flex-row xl:h-[250px] lg:h-[300px] p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
-                                    <div className="mt-auto max-w-sm">
-                                        <h4 className="font-bold text-2xl text-blue-950">
+                                    <div className="lg:flex lg:flex-col lg:justify-between lg:mt-0 mt-auto">
+                                        <h4 className="font-bold text-2xl text-[#003697]">
                                             Diseño y Desarrollo
                                         </h4>
-                                        <p className="text-black">
+                                        <p className="text-black lg:mb-auto">
                                             Brinda un sitios web atractivo, funcional y adaptado a distintos dispositivos para captar la atención de tus visitantes.
                                         </p>
                                         <Link
@@ -84,15 +84,15 @@ export default function Services() {
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
-                                        src="https://img1.wsimg.com/cdnassets/transform/ab758ae9-0592-4e88-8623-409257c378fc/intl-img-hp-recore-cctld-small"
+                                        src="/images/Diseño-y-Desarrollo-Web-Lima.jpg"
                                         alt=""
-                                        width={237}
+                                        width={400}
                                         height={190}
                                     />
                                 </div>
                                 <div className="xl:h-[250px] xl:col-span-1 lg:col-span-2 p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
-                                    <div className="lg:flex lg:flex-col lg:justify-between  lg:mt-0 mt-auto">
-                                        <h4 className="font-bold text-2xl text-blue-950">
+                                    <div className="lg:flex lg:flex-col lg:justify-between lg:mt-0 mt-auto">
+                                        <h4 className="font-bold text-2xl text-[#003697]">
                                             Estrategia de Marketing Digital
                                         </h4>
                                         <p className="text-black lg:mb-auto">
@@ -107,9 +107,9 @@ export default function Services() {
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
-                                        src="https://img1.wsimg.com/cdnassets/transform/ab758ae9-0592-4e88-8623-409257c378fc/intl-img-hp-recore-cctld-small"
+                                        src="/images/Estrategia-de-Marketing-Digital-para-tu-negocio.jpg"
                                         alt=""
-                                        width={237}
+                                        width={400}
                                         height={190}
                                     />
                                 </div>
