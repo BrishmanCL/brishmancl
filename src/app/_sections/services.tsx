@@ -23,21 +23,21 @@ export default function Services() {
                     </p>
                     <TabGroup className="">
                         <TabList className="flex flex-wrap justify-center gap-8 mt-7 mb-7">
-                            <Tab className="bg-slate-700 rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <FaPager className="mx-auto text-5xl" />
-                                <span className="text-gray-100">Web</span>
+                            <Tab className="bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                                <FaPager className="mx-auto text-5xl text-[#003697]" />
+                                <span className="text-[#003697]">Web</span>
                             </Tab>
-                            <Tab className="bg-slate-700 rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <MdDesignServices className="mx-auto text-5xl" />
-                                <span className="text-gray-100">Diseño</span>
+                            <Tab className="bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                                <MdDesignServices className="mx-auto text-5xl text-[#003697]" />
+                                <span className="text-[#003697]">Diseño</span>
                             </Tab>
-                            <Tab className="bg-slate-700 rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <MdDesignServices className="mx-auto text-5xl" />
-                                <span className="text-gray-100">Integración</span>
+                            <Tab className="bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                                <MdDesignServices className="mx-auto text-5xl text-[#003697]" />
+                                <span className="text-[#003697]">Integración</span>
                             </Tab>
-                            <Tab className="bg-slate-700 rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <MdDesignServices className="mx-auto text-5xl" />
-                                <span className="text-gray-100">Automatización</span>
+                            <Tab className="bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                                <MdDesignServices className="mx-auto text-5xl text-[#003697]" />
+                                <span className="text-[#003697]">Automatización</span>
                             </Tab>
                         </TabList>
                         <TabPanels className="mb-20 mt-10">
