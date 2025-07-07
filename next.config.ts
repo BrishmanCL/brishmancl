@@ -2,7 +2,32 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['tailwindui.com', 'cdn.pixabay.com', "img1.wsimg.com", "integertel.com"], // Reemplaza 'example.com' con el dominio de tus imágenes.
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'tailwindui.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'cdn.pixabay.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img1.wsimg.com',
+        port: '',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'integertel.com',
+        port: '',
+        pathname: '/**',
+      },
+    ],
   },
 };
 
