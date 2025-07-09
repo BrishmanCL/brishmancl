@@ -3,8 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useState } from 'react';
 
-import { TbMessageCircleFilled } from "react-icons/tb";
-
 
 type AProps = {
     label: string;
@@ -37,7 +35,7 @@ export default function Header() {
 
     return (
         <header className="">
-            <nav className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <nav className="flex mx-4 sm:mx-8 md:mx-10 xl:mx-36 2xl:mx-96 items-center justify-between py-6 lg:py-8" aria-label="Global">
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
@@ -114,7 +112,7 @@ export default function Header() {
                         <div className="flex items-center justify-between">
                             <a href="#" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
-                                <img className="h-8 w-auto" src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" />
+                                <img className="h-8 w-auto" src="/images/Brishman CL logo.svg" alt="" />
                             </a>
                             <button onClick={toggleMobileMenu} type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
                                 <span className="sr-only">Close menu</span>
