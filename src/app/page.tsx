@@ -12,11 +12,11 @@ export default function Home() {
     <div>
       <div className="h-[calc(100vh-4rem)]">
         <div className="mx-4 sm:mx-8 md:mx-10 xl:mx-36 2xl:mx-96 h-full">
-          <div className="w-full lg:h-full flex items-center flex-col-reverse gap-4 xl:gap-8 lg:flex-row ">
+          <div className="h-full flex items-center flex-col-reverse gap-4 xl:gap-8 lg:flex-row ">
             <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
               <h1 className="text-balance text-slate-700 text-4xl xl:text-5xl font-extrabold tracking-tight">
-                <strong className="text-[#003697]">¿Tu negocio aún no brilla en internet?</strong>{" "}
-                Creamos experiencias digitales que convierten visitas en ventas.
+                <strong className="text-[#003697] xl:text-3xl">¿Tu negocio aún no brilla en internet?</strong>{" "}
+                <br/>Creamos experiencias digitales que convierten visitas en ventas.
               </h1>
               <p className="mt-8 font-medium text-lg text-pretty text-slate-700">
                 Creamos experiencias digitales únicas, funcionales y
