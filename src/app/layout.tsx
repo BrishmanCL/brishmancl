@@ -7,6 +7,9 @@ import Header from "./ui/components/Header";
 export const metadata: Metadata = {
   title: "Desarrollo Web, Marketing y Automatización | BrishmanCL S.A.C.",
   description: "Creamos sitios web profesionales, campañas de marketing, automatización con WhatsApp y soluciones digitales para empresas. Empieza tu proyecto con BrishmanCL hoy.",
+  icons: {
+    icon: "/images/Brishman CL logo.svg",
+  }
 };
 
 export default function RootLayout({
