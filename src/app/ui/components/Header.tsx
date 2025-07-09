@@ -1,19 +1,7 @@
 "use client"
-import Link from "next/link";
-import Image from "next/image";
+
 import React, { useState } from 'react';
 
-
-type AProps = {
-    label: string;
-    href: string;
-};
-
-function A({ label, href }: AProps) {
-    return (
-        <Link className="hover:shadow-lg hover:bg-[#003697] px-2 pb-1 block rounded-lg border-2 border-transparent hover:border-2 hover:border-white  hover:bg-slate-950/[.06] text-[#003697] hover:text-white" href={href}>{label}</Link>
-    );
-}
 
 export default function Header() {
 

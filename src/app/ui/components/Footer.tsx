@@ -19,13 +19,13 @@ export default function Footer() {
                 </p>
                 <div className="flex justify-center mt-3">
                     <a href="">
-                        <FaFacebookF className="text-3xl text-[#003697] mr-4" />
+                        <FaFacebookF className="text-3xl text-gray-700 mr-4" />
                     </a>
                     <a href="">
-                        <FaInstagram className="text-3xl text-[#003697] mr-4" />
+                        <FaInstagram className="text-3xl text-gray-700 mr-4" />
                     </a>
                     <a href="">
-                        <FaLinkedinIn className="text-3xl text-[#003697] mr-4" />
+                        <FaLinkedinIn className="text-3xl text-gray-700 mr-4" />
                     </a>
                 </div>
                 <span className="text-center block mt-9 text-gray-700">© 2025 BrishmanCL S.A.C</span>

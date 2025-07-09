@@ -24,21 +24,21 @@ export default function Services() {
                         adaptan a tus necesidades.
                     </p>
                     <TabGroup className="">
-                        <TabList className="flex flex-wrap justify-center gap-8 mt-7 mb-7">
-                            <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <FaPager className="mx-auto text-5xl text-[#003697]" />
+                        <TabList className="overflow-x-auto flex md:justify-center gap-5 md:gap-8 mt-7 mb-7 px-4">
+                            <Tab className="outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                                <FaPager className="mx-auto md:text-5xl text-[#003697]" />
                                 <span className="text-[#003697]">Web</span>
                             </Tab>
-                            <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <MdDesignServices className="mx-auto text-5xl text-[#003697]" />
+                            <Tab className="outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                                <MdDesignServices className="mx-auto md:text-5xl text-[#003697]" />
                                 <span className="text-[#003697]">Diseño</span>
                             </Tab>
-                            <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <FaGears className="mx-auto text-5xl text-[#003697]" />
+                            <Tab className="outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-366 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                                <FaGears className="mx-auto md:text-5xl text-[#003697]" />
                                 <span className="text-[#003697]">Sistemas</span>
                             </Tab>
-                            <Tab className="outline-none bg-white rounded-lg p-5 text-center cursor-pointer w-36 h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <HiMiniBuildingOffice2 className="mx-auto text-5xl text-[#003697]" />
+                            <Tab className="outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
+                                <HiMiniBuildingOffice2 className="mx-auto md:text-5xl text-[#003697]" />
                                 <span className="text-[#003697]">Infraestructura</span>
                             </Tab>
                         </TabList>
