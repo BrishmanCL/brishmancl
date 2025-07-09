@@ -11,24 +11,24 @@ export default function Footer() {
         <footer className="py-10">
             <Wrapper>
                 <div className="flex justify-center mb-7">
-                    <Image alt="" src="/logo-black.png" width={30} height={30} />
+                    <Image alt="" src="/images/Brishman CL logo.svg" width={70} height={70} />
                 </div>
-                <p className="text-slate-300 text-center">
+                <p className="text-gray-700 text-center">
                     Somos una empresa de desarrollo de software, especializada en
                     soluciones digitales para empresas.
                 </p>
                 <div className="flex justify-center mt-3">
                     <a href="">
-                        <FaFacebookF className="text-3xl text-white-950 mr-4" />
+                        <FaFacebookF className="text-3xl text-[#003697] mr-4" />
                     </a>
                     <a href="">
-                        <FaInstagram className="text-3xl text-white-950 mr-4" />
+                        <FaInstagram className="text-3xl text-[#003697] mr-4" />
                     </a>
                     <a href="">
-                        <FaLinkedinIn className="text-3xl text-white-950 mr-4" />
+                        <FaLinkedinIn className="text-3xl text-[#003697] mr-4" />
                     </a>
                 </div>
-                <span className="text-center block mt-9">© 2025 BrishmanCL S.A.C</span>
+                <span className="text-center block mt-9 text-gray-700">© 2025 BrishmanCL S.A.C</span>
             </Wrapper>
         </footer>
     );
