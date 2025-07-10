@@ -62,8 +62,8 @@ export default function Services() {
                             </Tab>
                         </TabList>
                         <TabPanels className="mb-20 mt-4">
-                            <TabPanel className="grid gap-8 grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-                                <div className="xl:row-span-2 xl:h-auto xl:flex-col lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                            <TabPanel className="grid gap-4 md:gap-8 grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                                <div className="xl:row-span-2 xl:h-auto xl:flex-col lg:h-[300px] md:p-5 p-3 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <Image
                                         className="my-auto mx-auto w-full"
                                         src="/images/Presencia en Linea de tu negocio.jpg"
@@ -88,7 +88,7 @@ export default function Services() {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="xl:flex-row xl:h-[250px] lg:h-[300px] p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                                <div className="xl:flex-row xl:h-[250px] lg:h-[300px] md:p-5 p-3 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <div className="lg:flex lg:flex-col lg:justify-between lg:mt-0 mt-auto">
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             Diseño y Desarrollo
@@ -111,7 +111,7 @@ export default function Services() {
                                         height={190}
                                     />
                                 </div>
-                                <div className="xl:h-[250px] md:col-span-1 xl:col-span-1 lg:col-span-2 col-span-2 p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                                <div className="xl:h-[250px] md:col-span-1 xl:col-span-1 lg:col-span-2 col-span-2 md:p-5 p-3 rounded-lg bg-white flex flex-col-reverse md:flex-row gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <div className="lg:flex lg:flex-col lg:justify-between lg:mt-0 mt-auto">
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             Estrategia de Marketing Digital
@@ -135,8 +135,8 @@ export default function Services() {
                                     />
                                 </div>
                             </TabPanel>
-                            <TabPanel className="grid gap-8 grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
-                                <div className="xl:row-span-2 col-span-2 md:col-span-1 xl:h-auto xl:flex-col  lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                            <TabPanel className="grid gap-4 md:gap-8 grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                                <div className="xl:row-span-2 col-span-2 md:col-span-1 xl:h-auto xl:flex-col lg:h-[300px] md:p-5 p-3 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <Image
                                         className="my-auto mx-auto w-full"
                                         src="/images/Presencia en Linea de tu negocio.jpg"
@@ -159,7 +159,7 @@ export default function Services() {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="xl:flex-row xl:h-[250px] lg:h-[300px] p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                                <div className="xl:flex-row xl:h-[250px] lg:h-[300px] md:p-5 p-3 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <div className="lg:flex lg:flex-col lg:justify-between lg:mt-0 mt-auto">
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             Identidad de Marca y Branding
@@ -182,7 +182,7 @@ export default function Services() {
                                         height={190}
                                     />
                                 </div>
-                                <div className="xl:h-[250px] xl:col-span-1 lg:col-span-2 p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                                <div className="xl:h-[250px] xl:col-span-1 lg:col-span-2 md:p-5 p-3 rounded-lg bg-white flex flex-col-reverse md:flex-row gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <div className="lg:flex lg:flex-col lg:justify-between lg:mt-0 mt-auto">
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             UX/UI
@@ -206,7 +206,7 @@ export default function Services() {
                                     />
                                 </div>
                             </TabPanel>
-                            <TabPanel className="grid gap-8 grid-cols lg:grid-cols-2">
+                            <TabPanel className="grid gap-4 md:gap-8 grid-cols lg:grid-cols-2">
                                 <div className="xl:row-span-2 xl:h-auto xl:flex-col  lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <Image
                                         className="my-auto mx-auto w-full"
@@ -277,7 +277,7 @@ export default function Services() {
                                     />
                                 </div>
                             </TabPanel>
-                            <TabPanel className="grid gap-8 grid-cols lg:grid-cols-2">
+                            <TabPanel className="grid gap-4 md:gap-8 grid-cols lg:grid-cols-2">
                                 <div className="xl:row-span-2 xl:h-auto xl:flex-col  lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <Image
                                         className="my-auto mx-auto w-full"
