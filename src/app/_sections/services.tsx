@@ -1,3 +1,5 @@
+"use client";
+
 import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { MdDesignServices } from "react-icons/md";
 import { FaPager } from "react-icons/fa6";
@@ -6,7 +8,8 @@ import Link from "next/link";
 import Wrapper from "../_components/wrapper";
 import { FaGears } from "react-icons/fa6";
 import { HiMiniBuildingOffice2 } from "react-icons/hi2";
-
+import { Fragment } from 'react';
+import clsx from 'clsx';
 
 export default function Services() {
     return (
@@ -24,25 +27,41 @@ export default function Services() {
                         adaptan a tus necesidades.
                     </p>
                     <TabGroup className="">
-                        <TabList className="overflow-x-auto flex md:justify-center gap-5 md:gap-8 mt-7 mb-7 px-4">
-                            <Tab className="outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <FaPager className="mx-auto md:text-5xl text-[#003697]" />
-                                <span className="text-[#003697]">Web</span>
+                        <TabList className="overflow-x-auto pb-4 flex md:justify-center gap-5 md:gap-8 mt-7 mb-4 px-4">
+                            <Tab as={Fragment}>
+                            {( {selected} ) => (
+                                <div className={clsx( selected ? 'outline-none bg-slate-700 rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white': 'outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white')}>
+                                    <FaPager className={ clsx( selected ? 'mx-auto md:text-5xl text-white' : 'mx-auto md:text-5xl text-[#003697]')}/>
+                                    <span className={clsx( selected ? 'text-white font-semibold' : 'text-[#003697] font-semibold')}>Web</span>
+                                </div>
+                            )}
                             </Tab>
-                            <Tab className="outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <MdDesignServices className="mx-auto md:text-5xl text-[#003697]" />
-                                <span className="text-[#003697]">Diseño</span>
+                            <Tab as={Fragment}>
+                            {( {selected} ) => (
+                                <div className={clsx( selected ? 'outline-none bg-slate-700 rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white': 'outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white')}>
+                                    <MdDesignServices className={ clsx( selected ? 'mx-auto md:text-5xl text-white' : 'mx-auto md:text-5xl text-[#003697]')}/>
+                                    <span className={clsx( selected ? 'text-white font-semibold' : 'text-[#003697] font-semibold')}>Diseño</span>
+                                </div>
+                            )}
                             </Tab>
-                            <Tab className="outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-366 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <FaGears className="mx-auto md:text-5xl text-[#003697]" />
-                                <span className="text-[#003697]">Sistemas</span>
+                            <Tab as={Fragment}>
+                            {( {selected} ) => (
+                                <div className={clsx( selected ? 'outline-none bg-slate-700 rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white': 'outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white')}>
+                                    <FaGears className={ clsx( selected ? 'mx-auto md:text-5xl text-white' : 'mx-auto md:text-5xl text-[#003697]')}/>
+                                    <span className={clsx( selected ? 'text-white font-semibold' : 'text-[#003697] font-semibold')}>Sistemas</span>
+                                </div>
+                            )}
                             </Tab>
-                            <Tab className="outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white">
-                                <HiMiniBuildingOffice2 className="mx-auto md:text-5xl text-[#003697]" />
-                                <span className="text-[#003697]">Infraestructura</span>
+                            <Tab as={Fragment}>
+                            {( {selected} ) => (
+                                <div className={clsx( selected ? 'outline-none bg-slate-700 rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white': 'outline-none bg-white rounded-lg p-2 md:p-5 text-center cursor-pointer min-w-[123px] md:w-36 md:h-36 grid flex-col content-between shadow-lg hover:shadow-blue-500/50 duration-300 border-2 border-transparent hover:border-white')}>
+                                    <HiMiniBuildingOffice2 className={ clsx( selected ? 'mx-auto md:text-5xl text-white' : 'mx-auto md:text-5xl text-[#003697]')}/>
+                                    <span className={clsx( selected ? 'text-white font-semibold' : 'text-[#003697] font-semibold')}>Infraestructura</span>
+                                </div>
+                            )}
                             </Tab>
                         </TabList>
-                        <TabPanels className="mb-20 mt-10">
+                        <TabPanels className="mb-20 mt-4">
                             <TabPanel className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
                                 <div className="xl:row-span-2 xl:h-auto xl:flex-col  lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <Image
