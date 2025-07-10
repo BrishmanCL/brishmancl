@@ -62,8 +62,8 @@ export default function Services() {
                             </Tab>
                         </TabList>
                         <TabPanels className="mb-20 mt-4">
-                            <TabPanel className="grid gap-8 md:grid-cols-1 lg:grid-cols-2">
-                                <div className="xl:row-span-2 xl:h-auto xl:flex-col  lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                            <TabPanel className="grid gap-8 grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                                <div className="xl:row-span-2 xl:h-auto xl:flex-col lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <Image
                                         className="my-auto mx-auto w-full"
                                         src="/images/Presencia en Linea de tu negocio.jpg"
@@ -75,7 +75,7 @@ export default function Services() {
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             Presencia en Línea
                                         </h4>
-                                        <p className="text-black">
+                                        <p className="text-black hidden md:block">
                                             Refuerza la identidad de tu negocio con un dominio
                                             profesional que mejore tu visibilidad en Google y brinde
                                             credibilidad a tus correos empresariales.
@@ -93,7 +93,7 @@ export default function Services() {
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             Diseño y Desarrollo
                                         </h4>
-                                        <p className="text-black lg:mb-auto">
+                                        <p className="text-black lg:mb-auto hidden md:block">
                                             Brinda un sitios web atractivo, funcional y adaptado a distintos dispositivos para captar la atención de tus visitantes.
                                         </p>
                                         <Link
@@ -111,12 +111,12 @@ export default function Services() {
                                         height={190}
                                     />
                                 </div>
-                                <div className="xl:h-[250px] xl:col-span-1 lg:col-span-2 p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                                <div className="xl:h-[250px] md:col-span-1 xl:col-span-1 lg:col-span-2 col-span-2 p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <div className="lg:flex lg:flex-col lg:justify-between lg:mt-0 mt-auto">
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             Estrategia de Marketing Digital
                                         </h4>
-                                        <p className="text-black lg:mb-auto">
+                                        <p className="text-black lg:mb-auto hidden md:block">
                                             Atrae tráfico y convierte visitantes en clientes con marketing digital efectivo.
                                         </p>
                                         <Link
@@ -135,8 +135,8 @@ export default function Services() {
                                     />
                                 </div>
                             </TabPanel>
-                            <TabPanel className="grid gap-8 grid-cols-1 lg:grid-cols-2">
-                                <div className="xl:row-span-2 xl:h-auto xl:flex-col  lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
+                            <TabPanel className="grid gap-8 grid-cols-2 md:grid-cols-1 lg:grid-cols-2">
+                                <div className="xl:row-span-2 col-span-2 md:col-span-1 xl:h-auto xl:flex-col  lg:h-[300px] p-5 rounded-lg bg-white flex flex-col md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
                                     <Image
                                         className="my-auto mx-auto w-full"
                                         src="/images/Presencia en Linea de tu negocio.jpg"
@@ -148,7 +148,7 @@ export default function Services() {
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             Diseño grafico publicitario
                                         </h4>
-                                        <p className="text-black">
+                                        <p className="text-black hidden md:block">
                                             Impulsa tu marca con banners, flyers y anuncios optimizados para redes sociales y campañas digitales.
                                         </p>
                                         <Link
@@ -164,7 +164,7 @@ export default function Services() {
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             Identidad de Marca y Branding
                                         </h4>
-                                        <p className="text-black lg:mb-auto">
+                                        <p className="text-black lg:mb-auto hidden md:block">
                                             Haz que tu negocio destaque con un logotipo, colores y estilo visual que transmitan confianza y profesionalismo.
                                         </p>
                                         <Link
@@ -187,7 +187,7 @@ export default function Services() {
                                         <h4 className="font-bold text-2xl text-[#003697]">
                                             UX/UI
                                         </h4>
-                                        <p className="text-black lg:mb-auto">
+                                        <p className="text-black lg:mb-auto hidden md:block">
                                             Crea experiencias digitales atractivas y funcionales con un diseño intuitivo que convierte visitantes en clientes.
                                         </p>
                                         <Link
