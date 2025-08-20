@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ptSans } from "./ui/fonts/fonts.google";
 import "./ui/styles/globals.css";
 import Header from "./ui/components/Header";
+import Footer from "./ui/components/Footer";
 
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default function RootLayout({
       >
         <Header></Header>
         {children}
+        <Footer></Footer>
       </body>
     </html>
   );
