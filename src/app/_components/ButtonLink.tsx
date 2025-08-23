@@ -2,7 +2,7 @@ import Link from "next/link";
 import { ReactNode } from "react";
 
 
-export default function ({href, children, className}:{href:string, children: ReactNode, className?:string}) {
+export default function ButtonLink({href, children, className}:{href:string, children: ReactNode, className?:string}) {
     return (
         <Link
             href={href}

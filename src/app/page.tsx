@@ -1,11 +1,8 @@
 import Link from "next/link";
-import Form from "next/form";
 import Services from "./_sections/services";
 import TrustSocialProof from "./_sections/trust&SocialProof";
-import Footer from "./ui/components/Footer";
 import OurTeam from "@/app/_sections/ourTeam";
 import Image from "next/image";
-import Wrapper from "@/app/_components/wrapper";
 import FormSection from "./_sections/form";
 
 export default function Home() {

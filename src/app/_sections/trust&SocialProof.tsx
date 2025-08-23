@@ -1,5 +1,4 @@
 import Wrapper from "../_components/wrapper";
-import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 
 
@@ -34,7 +33,7 @@ export default function TrustSocialProof() {
                             </div>
                             <div className="flex gap-3 mt-auto">
                                 {Array.from({ length: 5 }).map((_, i) => (
-                                    <FaStar className="w-5 h-5 text-[#1B327D]" />
+                                    <FaStar key={i} className="w-5 h-5 text-[#1B327D]" />
                                 ))}
                             </div>
                         </div>
@@ -57,7 +56,7 @@ export default function TrustSocialProof() {
                             </div>
                             <div className="flex gap-3 mt-auto">
                                 {Array.from({ length: 5 }).map((_, i) => (
-                                    <FaStar className="w-5 h-5 text-[#1B327D]" />
+                                    <FaStar key={i} className="w-5 h-5 text-[#1B327D]" />
                                 ))}
                             </div>
                         </div>
@@ -80,7 +79,7 @@ export default function TrustSocialProof() {
                             </div>
                             <div className="flex gap-3 mt-auto">
                                 {Array.from({ length: 4 }).map((_, i) => (
-                                    <FaStar className="w-5 h-5 text-[#1B327D]" />
+                                    <FaStar key={i} className="w-5 h-5 text-[#1B327D]" />
                                 ))}
                             </div>
                         </div>
@@ -103,7 +102,7 @@ export default function TrustSocialProof() {
                             </div>
                             <div className="flex gap-3 mt-auto">
                                 {Array.from({ length: 5 }).map((_, i) => (
-                                    <FaStar className="w-5 h-5 text-[#1B327D]" />
+                                    <FaStar key={i} className="w-5 h-5 text-[#1B327D]" />
                                 ))}
                             </div>
                         </div>

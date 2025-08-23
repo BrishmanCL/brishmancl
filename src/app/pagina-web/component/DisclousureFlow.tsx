@@ -18,7 +18,7 @@ type HorizontalAccordionItemProps = {
 };
 
 export function HorizontalAccordion({ children }: HorizontalAccordionProps) {
-    const [activeIndex, setActiveIndex] = useState<number>(0); // primer tab activo
+    const [activeIndex, setActiveIndex] = useState<number | null>(0); // primer tab activo
 
     return (
         <div className="flex flex-col md:flex-row w-full rounded-lg overflow-hidden h-auto md:h-[420px]">

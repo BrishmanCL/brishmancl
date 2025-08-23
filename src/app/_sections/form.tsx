@@ -46,7 +46,7 @@ Mensaje: ${form.mensaje}`;
                                 </p>
                             </div>
                             <div className="relative h-80 lg:my-16 my-8">
-                                <Form onSubmit={handleSubmit}>
+                                <Form action={""} onSubmit={handleSubmit}>
                                     {/* On submission, the input value will be appended to 
                   the URL, e.g. /search?query=abc */}
 

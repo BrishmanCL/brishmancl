@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const projects = [
@@ -53,7 +54,8 @@ export default function Carousel() {
                         {/* Espaciado interno sin romper el ancho del item */}
                         <div className="h-full w-full px-3 lg:px-4">
                             <div className="bg-white rounded-lg shadow-lg overflow-hidden h-full">
-                                <img
+                                <Image
+                                width={400} height={400}
                                     src={project.img}
                                     alt={project.title}
                                     className="w-full h-48 object-cover md:h-52 lg:h-56"

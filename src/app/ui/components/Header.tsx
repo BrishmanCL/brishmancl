@@ -1,6 +1,7 @@
 "use client"
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const listProducts = [
     {
@@ -61,7 +62,7 @@ export default function Header() {
                 <div className="flex lg:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Your Company</span>
-                        <img className="h-10 w-auto" src="/images/Brishman CL SAC.svg" alt="" />
+                        <Image className="h-10 w-auto" width={300} height={280} src="/images/Brishman CL SAC.svg" alt="" />
                     </a>
                 </div>
                 <div className="flex lg:hidden">
@@ -114,7 +115,7 @@ export default function Header() {
                         <div className="flex items-center justify-between">
                             <a href="#" className="-m-1.5 p-1.5">
                                 <span className="sr-only">Your Company</span>
-                                <img className="h-8 w-auto" src="/images/Brishman CL logo.svg" alt="" />
+                                <Image className="h-8 w-auto" width={300} height={300} src="/images/Brishman CL logo.svg" alt="" />
                             </a>
                             <button onClick={toggleMobileMenu} type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
                                 <span className="sr-only">Close menu</span>
