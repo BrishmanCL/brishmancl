@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Image from 'next/image';
 
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const listProducts = [
     {
         title: "WhatsCampaign",
@@ -37,9 +38,10 @@ function ElementProductos({ title, description }: { title: string, description: 
         </div>
     );
 }
-
+/* eslint-enable @typescript-eslint/no-unused-vars */
 export default function Header() {
-
+    
+    /* eslint-disable @typescript-eslint/no-unused-vars */
     const [isOpen, setIsOpen] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
     const [isProductsOpenMovil, setIsProductsOpenMovil] = useState(false);
@@ -55,6 +57,7 @@ export default function Header() {
     const toggleProductsMenuMovil = () => {
         setIsProductsOpenMovil(!isProductsOpenMovil);
     }
+    /* eslint-enable @typescript-eslint/no-unused-vars */
 
     return (
         <header className="">
