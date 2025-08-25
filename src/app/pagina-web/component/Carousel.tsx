@@ -8,7 +8,7 @@ const projects = [
     { title: 'Contratista de construcción', desc: 'Diseño y desarrollo de una página optimizada para presentar información clave.', link: 'CANO CONTRATISTA', img: '/images/diseño-web-proyecto-1.png' },
     { title: 'Distribuidor de equipos', desc: 'Rediseño visual enfocado en mejorar la experiencia del usuario y la conversión.', link: 'DS3 COMUNICACIONES', img: '/images/diseño-web-DS3.png' },
     { title: 'Desarrollador de bots', desc: 'Landing page enfocada en automatización y presentación de producto.', link: 'WHATS BOT SERVICE', img: '/images/desarrollo-web-bot-whatsapp.png' },
-    { title: 'Proyecto extra', desc: 'Otro proyecto adicional para mostrar scroll.', link: 'EXTRA SERVICE', img: '/images/desarrollo-web-techperuproveedor.png' },
+    { title: 'Proveedor de equipos de monitoreo', desc: 'Catálogo de Equipos de monitoreo ocupacional para sus campañas de marketing y ventas. ', link: 'TECH PERU PROVEEDOR', img: '/images/desarrollo-web-techperuproveedor.png' },
 ];
 
 export default function Carousel() {

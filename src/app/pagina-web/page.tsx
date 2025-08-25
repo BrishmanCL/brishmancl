@@ -27,7 +27,7 @@ export default function PaginaWeb() {
                                 <h2 className="text-slate-700 text-2xl xl:text-5xl font-extrabold">Creamos sitios web modernos y estratégicos, diseñados en lo que realmente necesita</h2>
                                 <p className="mt-8">No competimos por precio. Analizamos tus objetivos en función de tu inversión para generar resultados concretos.</p>
                                 <div className="mx-auto mt-5 mb-8 lg:mb-10 lg:mt-10 text-center lg:text-left">
-                                    <ButtonLink href="" className="">Comunicar mis necesidades</ButtonLink>
+                                    <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20vi%20tu%20página%20web%20y%20quiero%20comunicar%20mis%20necesidades." className="">Comunicar mis necesidades</ButtonLink>
                                 </div>
                             </div>
                         </div>
@@ -72,7 +72,7 @@ export default function PaginaWeb() {
                                     <h4 className="font-extrabold text-[#003697] text-2xl md:text-3xl">Presencia en Línea</h4>
                                     <p>Potenciamos tu visibilidad en internet para fortalecer tu reputación y credibilidad.</p>
                                 </div>
-                                <Link className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={""}>
+                                <Link target="_blank" className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={"https://wa.me/51956961075?text=%20Quiero%20mejorar%20la%20presencia%20en%20l%C3%ADnea%20de%20mi%20negocio%20y%20atraer%20m%C3%A1s%20clientes."}>
                                     <div className="h-full flex items-center justify-center">
                                         <FaWhatsapp className="w-8 h-8 text-[#003697]" />
                                     </div>
@@ -96,7 +96,7 @@ export default function PaginaWeb() {
                                     <h4 className="font-extrabold text-[#003697] text-2xl md:text-3xl">Diseño y Desarrollo</h4>
                                     <p>Construimos sitios web adaptados a la identidad, estilo y necesidades funcionales de tu negocio.</p>
                                 </div>
-                                <Link className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={""}>
+                                <Link target="_blank" className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={"https://wa.me/51956961075?text=%20Estoy%20interesado%20en%20un%20sitio%20web%20moderno%20y%20estrat%C3%A9gico%20para%20mi%20empresa."}>
                                     <div className="h-full flex items-center justify-center">
                                         <FaWhatsapp className="w-8 h-8 text-[#003697]" />
                                     </div>
@@ -120,7 +120,7 @@ export default function PaginaWeb() {
                                     <p>Potenciamos tu visibilidad en internet para fortalecer tu reputación y credibilidad.
                                     </p>
                                 </div>
-                                <Link className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={""}>
+                                <Link target="_blank" className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={"https://wa.me/51956961075?text=%20Quiero%20una%20estrategia%20de%20marketing%20digital%20que%20genere%20resultados%20reales."}>
                                     <div className="h-full flex items-center justify-center">
                                         <FaWhatsapp className="w-8 h-8 text-[#003697]" />
                                     </div>
@@ -128,7 +128,8 @@ export default function PaginaWeb() {
                             </div>
                         </div>
                         <div className="mt-20 text-center">
-                            <ButtonLink href="">¿No está lo que necesitas? Conversemos</ButtonLink>
+                            <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman%2C%20lo%20que%20necesito%20es%20un%20servicio%20que%20me%20ayude%20a%E2%80%A6
+">¿No está lo que necesitas? Conversemos</ButtonLink>
                         </div>
                     </div>
                 </Wrapper>
@@ -321,7 +322,8 @@ export default function PaginaWeb() {
                                 Escríbenos por WhatsApp para escucharte y ofrecerte una solución personalizada.</p>
                         </div>
                         <div className="p-9 flex justify-center items-center md:w-1/3 bg-[url('/images/fondo-blanco-minimalista.jpg')] bg-cover bg-center bg-opacity-85">
-                            <ButtonLink href="" >Agenda una consulta</ButtonLink>
+                            <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20quiero%20agendar%20una%20consulta%20contigo.%20¿Podrías%20indicarme%20tu%20disponibilidad?
+" >Agenda una consulta</ButtonLink>
                         </div>
                     </div>
                 </Wrapper>
@@ -333,7 +335,8 @@ export default function PaginaWeb() {
                         <div className="mt-10">
                             <Faq></Faq>
                             <div className="text-center mt-5">
-                                <ButtonLink href="" className="mx-auto">¿Sigues teniendo dudas? Conversemos</ButtonLink>
+                                <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20todavía%20tengo%20algunas%20dudas%20y%20quisiera%20que%20me%20ayudes%20a%20resolverlas.
+" className="mx-auto">¿Sigues teniendo dudas? Conversemos</ButtonLink>
                             </div>
                         </div>
                     </div>

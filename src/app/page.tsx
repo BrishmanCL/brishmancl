@@ -4,6 +4,15 @@ import TrustSocialProof from "./_sections/trust&SocialProof";
 import OurTeam from "@/app/_sections/ourTeam";
 import Image from "next/image";
 import FormSection from "./_sections/form";
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: "Desarrollo Web, Marketing y Automatización | BrishmanCL S.A.C.",
+  description: "Creamos sitios web profesionales, campañas de marketing, automatización con WhatsApp y soluciones digitales para empresas. Empieza tu proyecto con BrishmanCL hoy.",
+  icons: {
+    icon: "/images/Brishman CL logo.svg",
+  }
+};
 
 export default function Home() {
   return (
