@@ -35,7 +35,7 @@ export default function Home() {
                 Asesoría gratuita
               </Link>
             </div>
-            <div className="min-w-96">
+            <div className="w-[335px] md:min-w-96">
               <Image
                 className="w-full"
                 src="/images/servicios TI.png"

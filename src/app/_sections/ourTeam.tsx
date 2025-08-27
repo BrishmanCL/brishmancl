@@ -40,7 +40,7 @@ export default function OurTeam() {
                             />
                             <h5 className="font-bold mt-1 text-[#003697]">Gustavo</h5>
                             <span className="text-gray-600">CTO</span>
-                            <p className="text-black">Profesional técnico en Redes y seguridad informática con sólidos conocimientos en el análisis, planeamiento y ejecución de soluciones de Sistemas.</p>
+                            <p className="text-black">Profesional en Redes y seguridad informática con sólidos conocimientos en el análisis, planeamiento y ejecución de soluciones de Sistemas.</p>
                         </div>
                         <div className="bg-white rounded-lg p-4 shadow-lg">
                             <Image
