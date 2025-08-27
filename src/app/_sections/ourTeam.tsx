@@ -1,5 +1,4 @@
 import Wrapper from "@/app/_components/wrapper";
-import Image from "next/image";
 
 export default function OurTeam() {
     return (
