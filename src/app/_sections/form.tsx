@@ -4,6 +4,7 @@ import { useState } from "react";
 import Wrapper from '@/app/_components/wrapper';
 import Form from "next/form";
 import { FaWhatsapp } from "react-icons/fa";
+import { fbq } from "@/app/utils/fpixel";
 
 export default function FormSection() {
 
@@ -21,6 +22,7 @@ export default function FormSection() {
     };
 
     const handleSubmit = (e: React.FormEvent) => {
+        fbq("Contact");
         e.preventDefault();
         const numero = "51956961075"; // tu número con código de país (ej: Perú 51)
         const texto = `Hola, soy ${form.nombre} (${form.rol}) de ${form.empresa}.

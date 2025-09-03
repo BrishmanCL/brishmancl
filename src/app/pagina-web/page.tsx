@@ -1,14 +1,14 @@
 
 import Wrapper from "@/app/_components/wrapper";
 import Image from "next/image";
-import Link from "next/link";
-import ButtonLink from "../_components/ButtonLink";
+import ButtonLink from "@/app/_components/ButtonLink";
 import type { Metadata } from 'next';
 import { HorizontalAccordion, HorizontalAccordionItem } from "./component/DisclousureFlow";
 import { TbCircleNumber1Filled, TbCircleNumber2Filled, TbCircleNumber3Filled } from "react-icons/tb";
-import { FaArrowCircleUp, FaWhatsapp } from "react-icons/fa";
+import { FaArrowCircleUp } from "react-icons/fa";
 import Carousel from "./component/Carousel";
 import Faq from "./component/Faq";
+import IconWhatsApp from "@/app/ui/elements/iconWhatsApp";
 
 export const metadata: Metadata = {
     title: "Páginas web y marketing digital en Lima | Impulsa tu negocio",
@@ -72,11 +72,8 @@ export default function PaginaWeb() {
                                     <h4 className="font-extrabold text-[#003697] text-2xl md:text-3xl">Presencia en Línea</h4>
                                     <p>Potenciamos tu visibilidad en internet para fortalecer tu reputación y credibilidad.</p>
                                 </div>
-                                <Link target="_blank" className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={"https://wa.me/51956961075?text=%20Quiero%20mejorar%20la%20presencia%20en%20l%C3%ADnea%20de%20mi%20negocio%20y%20atraer%20m%C3%A1s%20clientes."}>
-                                    <div className="h-full flex items-center justify-center">
-                                        <FaWhatsapp className="w-8 h-8 text-[#003697]" />
-                                    </div>
-                                </Link>
+
+                                <IconWhatsApp />
                             </div>
                             <div className="w-[290px] shadow-xl transition-all duration-300 hover:shadow-2xl rounded-lg relative lg:mt-28">
                                 <div className="overflow-hidden rounded-t-lg">
@@ -96,11 +93,7 @@ export default function PaginaWeb() {
                                     <h4 className="font-extrabold text-[#003697] text-2xl md:text-3xl">Diseño y Desarrollo</h4>
                                     <p>Construimos sitios web adaptados a la identidad, estilo y necesidades funcionales de tu negocio.</p>
                                 </div>
-                                <Link target="_blank" className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={"https://wa.me/51956961075?text=%20Estoy%20interesado%20en%20un%20sitio%20web%20moderno%20y%20estrat%C3%A9gico%20para%20mi%20empresa."}>
-                                    <div className="h-full flex items-center justify-center">
-                                        <FaWhatsapp className="w-8 h-8 text-[#003697]" />
-                                    </div>
-                                </Link>
+                                <IconWhatsApp />
                             </div>
                             <div className="w-[290px] shadow-xl transition-all duration-300 hover:shadow-2xl rounded-lg relative">
                                 <div className="overflow-hidden rounded-t-lg">
@@ -120,11 +113,7 @@ export default function PaginaWeb() {
                                     <p>Potenciamos tu visibilidad en internet para fortalecer tu reputación y credibilidad.
                                     </p>
                                 </div>
-                                <Link target="_blank" className="absolute rounded-full -bottom-7 left-1/2 -translate-x-1/2 h-[50px] w-[50px] border-2 border-[#003697] bg-white" href={"https://wa.me/51956961075?text=%20Quiero%20una%20estrategia%20de%20marketing%20digital%20que%20genere%20resultados%20reales."}>
-                                    <div className="h-full flex items-center justify-center">
-                                        <FaWhatsapp className="w-8 h-8 text-[#003697]" />
-                                    </div>
-                                </Link>
+                                <IconWhatsApp />
                             </div>
                         </div>
                         <div className="mt-20 text-center">

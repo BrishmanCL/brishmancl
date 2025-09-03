@@ -11,6 +11,7 @@ import { HiMiniBuildingOffice2 } from "react-icons/hi2";
 import { Fragment } from 'react';
 import clsx from 'clsx';
 import { FaWhatsapp } from "react-icons/fa";
+import ButtonIconLink from "@/app/_components/ButtonIconLink";
 
 export default function Services() {
 
@@ -101,13 +102,11 @@ export default function Services() {
                                             profesional que mejore tu visibilidad en Google y brinde
                                             credibilidad a tus correos empresariales.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.presenciaLinea}
-                                            className="w-full text-center mt-2 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Quiero%20mejorar%20la%20presencia%20en%20l%C3%ADnea%20de%20mi%20negocio%20y%20atraer%20m%C3%A1s%20clientes.">
+                                            Ver servicio
+                                        </ButtonIconLink>
+
                                     </div>
                                 </div>
                                 <div className="xl:flex-row xl:h-[250px] lg:h-[300px] md:p-5 p-3 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
@@ -118,13 +117,10 @@ export default function Services() {
                                         <p className="text-black lg:mb-auto hidden md:block">
                                             Brinda un sitios web atractivo, funcional y adaptado a distintos dispositivos para captar la atención de tus visitantes.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.diseñoDesarrollo}
-                                            className="w-full text-center mt-3 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Estoy%20interesado%20en%20un%20sitio%20web%20moderno%20y%20estrat%C3%A9gico%20para%20mi%20empresa.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
@@ -142,13 +138,10 @@ export default function Services() {
                                         <p className="text-black lg:mb-auto hidden md:block">
                                             Atrae tráfico y convierte visitantes en clientes con marketing digital efectivo.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.marketing}
-                                            className="w-full text-center mt-3 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Quiero%20una%20estrategia%20de%20marketing%20digital%20que%20genere%20resultados%20reales.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
@@ -175,13 +168,10 @@ export default function Services() {
                                         <p className="text-black hidden md:block">
                                             Impulsa tu marca con banners, flyers y anuncios optimizados para redes sociales y campañas digitales.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.diseño}
-                                            className="w-full text-center mt-2 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Necesito%20dise%C3%B1o%20gr%C3%A1fico%20publicitario%20que%20impacte%20en%20mi%20audiencia.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                 </div>
                                 <div className="xl:flex-row xl:h-[250px] lg:h-[300px] md:p-5 p-3 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
@@ -192,13 +182,10 @@ export default function Services() {
                                         <p className="text-black lg:mb-auto hidden md:block">
                                             Haz que tu negocio destaque con un logotipo, colores y estilo visual que transmitan confianza y profesionalismo.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.marca}
-                                            className="w-full text-center mt-3 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Quiero%20fortalecer%20la%20identidad%20de%20mi%20marca%20con%20un%20dise%C3%B1o%20profesional.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
@@ -216,13 +203,10 @@ export default function Services() {
                                         <p className="text-black lg:mb-auto hidden md:block">
                                             Crea experiencias digitales atractivas y funcionales con un diseño intuitivo que convierte visitantes en clientes.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.uxui}
-                                            className="w-full text-center mt-3 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Me%20interesa%20optimizar%20la%20experiencia%20de%20usuario%20(UX/UI)%20de%20mi%20web%20o%20app.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
@@ -249,13 +233,10 @@ export default function Services() {
                                         <p className="text-black">
                                             Optimiza y centraliza tus procesos clave como ventas, gestión de stock, facturación y atención al cliente. Te ayudamos a implementar sistemas que mejoran la eficiencia, el control y la rentabilidad de tu negocio.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.sistemas}
-                                            className="w-full text-center mt-2 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Busco%20un%20sistema%20para%20gestionar%20ventas,%20stock,%20facturaci%C3%B3n%20y%20atenci%C3%B3n%20al%20cliente.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                 </div>
                                 <div className="xl:flex-row xl:h-[250px] lg:h-[300px] p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
@@ -266,13 +247,10 @@ export default function Services() {
                                         <p className="text-black lg:mb-auto">
                                             Optimiza la atención al cliente, responde consultas, gestiona pedidos y brinda soporte en tiempo real, disponible 24/7 en WhatsApp redes de mensajeria.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.chatbots}
-                                            className="w-full text-center mt-3 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Quiero%20un%20chatbot%20inteligente%20para%20automatizar%20la%20atenci%C3%B3n%20de%20mis%20clientes.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
@@ -290,13 +268,10 @@ export default function Services() {
                                         <p className="text-black lg:mb-auto">
                                             Integra tus sistemas y automatiza tareas para optimizar tu flujo de trabajo, ahorrar tiempo y potenciar la eficiencia de tu equipo.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.automatizaciones}
-                                            className="w-full text-center mt-3 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Necesito%20automatizar%20procesos%20e%20integrar%20sistemas%20en%20mi%20negocio.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
@@ -323,13 +298,10 @@ export default function Services() {
                                         <p className="text-black">
                                             Conectividad robusta: la base para tu operación eficiente y fiable. Aseguramos un flujo de datos constante y sin interrupciones.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.redes}
-                                            className="w-full text-center mt-2 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Quiero%20implementar%20o%20mejorar%20la%20infraestructura%20de%20redes%20en%20mi%20empresa.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                 </div>
                                 <div className="xl:flex-row xl:h-[250px] lg:h-[300px] p-5 rounded-lg bg-white flex flex-col-reverse md:flex-row-reverse gap-5 shadow-lg justify-between hover:shadow-gray-900/55 duration-300">
@@ -340,13 +312,10 @@ export default function Services() {
                                         <p className="text-black lg:mb-auto">
                                             Garantiza rendimiento, seguridad y escalabilidad para tus datos.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.servidores}
-                                            className="w-full text-center mt-3 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Necesito%20servidores%20y%20almacenamiento%20confiables%20para%20mi%20organizaci%C3%B3n.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
@@ -364,13 +333,10 @@ export default function Services() {
                                         <p className="text-black lg:mb-auto">
                                             Disfruta de la tranquilidad de saber que tus activos están siempre resguardados.
                                         </p>
-                                        <Link
-                                            target="_blank"
-                                            href={urlServiceWhatsApp.seguridad}
-                                            className="w-full text-center mt-3 active:-translate-y-2 inline-block transition-all duration-300 shadow-lg hover:shadow-blue-500/50 hover:bg-blue-900 hover:text-white text-blue-900 p-2 pt-1 border-2 border-blue-900 rounded-lg font-semibold"
-                                        >
-                                            <FaWhatsapp className="w-6 h-6 inline" /> Ver servicio
-                                        </Link>
+                                        <ButtonIconLink
+                                            href="https://wa.me/51956961075?text=%20Estoy%20interesado%20en%20soluciones%20de%20seguridad%20y%20videovigilancia%20para%20mi%20negocio.">
+                                            Ver servicio
+                                        </ButtonIconLink>
                                     </div>
                                     <Image
                                         className="my-auto w-full lg:w-1/2"
