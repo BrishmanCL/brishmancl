@@ -4,35 +4,14 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from "@headlessui/react";
 import { MdDesignServices } from "react-icons/md";
 import { FaPager } from "react-icons/fa6";
 import Image from "next/image";
-import Link from "next/link";
 import Wrapper from "../_components/wrapper";
 import { FaGears } from "react-icons/fa6";
 import { HiMiniBuildingOffice2 } from "react-icons/hi2";
 import { Fragment } from 'react';
 import clsx from 'clsx';
-import { FaWhatsapp } from "react-icons/fa";
 import ButtonIconLink from "@/app/_components/ButtonIconLink";
 
 export default function Services() {
-
-    const numero = "51956961075";
-
-    const urlBase = `https://wa.me/${numero}?text=`;
-
-    const urlServiceWhatsApp = {
-        presenciaLinea: `${urlBase} Quiero mejorar la presencia en línea de mi negocio y atraer más clientes.`,
-        diseñoDesarrollo: `${urlBase} Estoy interesado en un sitio web moderno y estratégico para mi empresa.`,
-        marketing: `${urlBase} Quiero una estrategia de marketing digital que genere resultados reales.`,
-        diseño: `${urlBase} Necesito diseño gráfico publicitario que impacte en mi audiencia.`,
-        marca: `${urlBase} Quiero fortalecer la identidad de mi marca con un diseño profesional.`,
-        uxui: `${urlBase} Me interesa optimizar la experiencia de usuario (UX/UI) de mi web o app.`,
-        sistemas: `${urlBase} Busco un sistema para gestionar ventas, stock, facturación y atención al cliente.`,
-        chatbots: `${urlBase} Quiero un chatbot inteligente para automatizar la atención de mis clientes.`,
-        automatizaciones: `${urlBase} Necesito automatizar procesos e integrar sistemas en mi negocio.`,
-        redes: `${urlBase} Quiero implementar o mejorar la infraestructura de redes en mi empresa.`,
-        servidores: `${urlBase} Necesito servidores y almacenamiento confiables para mi organización.`,
-        seguridad: `${urlBase} Estoy interesado en soluciones de seguridad y videovigilancia para mi negocio.`
-    }
 
     return (
         <div id="servicios">

@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Services from "./_sections/services";
 import TrustSocialProof from "./_sections/trust&SocialProof";
 import OurTeam from "@/app/_sections/ourTeam";

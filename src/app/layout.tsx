@@ -3,6 +3,7 @@ import "./ui/styles/globals.css";
 import Header from "./ui/components/Header";
 import Footer from "./ui/components/Footer";
 import Script from "next/script";
+import Image from "next/image";
 
 export default function RootLayout({
   children,
@@ -31,7 +32,8 @@ export default function RootLayout({
         }}
       />
       <noscript>
-        <img
+        <Image
+          alt=""
           height="1"
           width="1"
           style={{ display: "none" }}
