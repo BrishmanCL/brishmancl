@@ -18,11 +18,11 @@ export default function FloatingWhatsApp({ message }: { message?: string }) {
     return (
         <Link
             href={url}
-            className="fixed bg-[#0CC143] bottom-3 right-3 rounded-full p-2 shadow-xl border-2 border-white"
+            className="fixed bg-[#0CC143] bottom-3 right-3 rounded-full p-2 shadow-xl border-2 border-white hover:p-3 transition-all"
             onClick={handleClick}
             target="_blank"
         >
-            <FaWhatsapp className="h-9 w-9 text-white" />
+            <FaWhatsapp className="h-9 w-9 text-white hover:h-11 hover:w-11 transition-all" />
         </Link>
     );
 }
