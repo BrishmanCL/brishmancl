@@ -9,10 +9,13 @@ import { FaArrowCircleUp } from "react-icons/fa";
 import Carousel from "./component/Carousel";
 import Faq from "./component/Faq";
 import IconWhatsApp from "@/app/ui/elements/iconWhatsApp";
+import FloatingWhatsApp from "@/app/ui/elements/floatingWhatsApp";
+
+const floatingMessage = "¡Hola equipo BrishmanCL! Vi su web y quiero saber más sobre cómo podrían ayudar a mi negocio a crecer online.";
 
 export const metadata: Metadata = {
     title: "Páginas web y marketing digital en Lima | Impulsa tu negocio",
-    description: "Creamos páginas web impactantes y estrategias digitales que conectan con tus clientes. Aumenta tus ventas con soluciones profesionales desde Lima."
+    description: "Creamos páginas web impactantes y estrategias digitales que conectan con tus clientes. Aumenta tus ventas con soluciones profesionales desde Lima.",
 }
 
 export default function PaginaWeb() {
@@ -331,6 +334,7 @@ export default function PaginaWeb() {
                     </div>
                 </Wrapper>
             </section>
+            <FloatingWhatsApp message={floatingMessage}/>
         </>
     )
 }
