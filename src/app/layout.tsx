@@ -9,9 +9,6 @@ export const metadata: Metadata = {
   title: {
     default: "Brishman CL S.A.C | Empresa TI de soluciones empresariales",
     template: "%s"
-  },
-  icons: {
-    icon: "/images/Brishman CL logo.svg",
   }
 };
 
