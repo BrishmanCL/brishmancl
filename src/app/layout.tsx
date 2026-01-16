@@ -20,7 +20,9 @@ export default function RootLayout({
 
   return (
     <html lang="es">
-      <head>
+      <body
+        className={`${ptSans.className} antialiased bg-gradient-to-r from-slate-100 via-slate-300 to-slate-100 text-white`}
+      >
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`
@@ -33,10 +35,7 @@ export default function RootLayout({
         </Script>
         {/* End Google Tag Manager */}
 
-      </head>
-      <body
-        className={`${ptSans.className} antialiased bg-gradient-to-r from-slate-100 via-slate-300 to-slate-100 text-white`}
-      >
+
         {/* Google Tag Manager (noscript) */}
         <noscript>
           <iframe

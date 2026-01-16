@@ -13,16 +13,70 @@ import FloatingWhatsApp from "@/app/ui/elements/floatingWhatsApp";
 
 const floatingMessage = "¡Hola equipo BrishmanCL! Vi su web y quiero saber más sobre cómo podrían ayudar a mi negocio a crecer online.";
 
+const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "¿Cuánto cuesta una página web en Lima?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El precio de una página web en Lima varía según las necesidades de tu negocio. En general, los costos dependen del tipo de sitio (informativo, tienda online, landing page), el número de secciones, funcionalidades requeridas y nivel de personalización. Nuestros planes se adaptan a todo tipo de empresas, desde emprendedores hasta marcas consolidadas. Escríbenos y te brindamos una cotización clara y sin compromiso."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Qué incluye el servicio de marketing digital?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nuestro servicio de marketing digital en Lima incluye:\n\n- Estrategia personalizada, basada en tus objetivos.\n- Gestión de campañas publicitarias (Meta Ads y Google Ads).\n- Optimización SEO para mejorar tu visibilidad en buscadores.\n- Contenido creativo para redes sociales.\n- Reportes y seguimiento para medir resultados y escalar.\n\nCreamos campañas enfocadas en resultados reales: atraer más clientes y aumentar tus ventas."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cómo sé si necesito rediseñar mi web?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Podrías necesitar un rediseño web si:\n\n- Tu sitio tarda en cargar o no se adapta bien a celulares.\n- Tu imagen ya no representa a tu marca actual.\n- No estás recibiendo visitas ni contactos desde tu web.\n- Tiene un diseño desactualizado o poco profesional.\n\nUna web moderna no solo mejora la experiencia del usuario, también potencia tu posicionamiento en Google y transmite mayor confianza."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo demora el desarrollo?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El tiempo de desarrollo depende de la complejidad y la cantidad de contenido, pero en promedio un sitio web sencillo puede estar listo en 2 a 4 semanas."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "¿Cuánto tiempo demora el desarrollo?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ofrecemos planes de mantenimiento opcionales que incluyen actualizaciones, soporte y mejoras continuas."
+            }
+        }
+    ]
+};
+
 export const metadata: Metadata = {
     title: "Diseño y Desarrollo Web en Lima para Empresas | Brishman CL",
     description: "Diseño y desarrollo web profesional en Lima para empresas. Páginas rápidas, seguras y optimizadas para generar clientes. Solicita tu web hoy.",
-    
+
 }
 
 
 export default function PaginaWeb() {
     return (
         <>
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(faqSchema),
+                }}
+            />
+
             <section className="text-slate-700">
                 <Wrapper>
                     <div className="h-[calc(100vh-6rem)] flex flex-col-reverse lg:flex-row items-center gap-7">
