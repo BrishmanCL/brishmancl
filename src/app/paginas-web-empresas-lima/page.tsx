@@ -14,9 +14,11 @@ import FloatingWhatsApp from "@/app/ui/elements/floatingWhatsApp";
 const floatingMessage = "¡Hola equipo BrishmanCL! Vi su web y quiero saber más sobre cómo podrían ayudar a mi negocio a crecer online.";
 
 export const metadata: Metadata = {
-    title: "Páginas web y marketing digital en Lima | Impulsa tu negocio",
-    description: "Creamos páginas web impactantes y estrategias digitales que conectan con tus clientes. Aumenta tus ventas con soluciones profesionales desde Lima.",
+    title: "Diseño y Desarrollo Web en Lima para Empresas | Brishman CL",
+    description: "Diseño y desarrollo web profesional en Lima para empresas. Páginas rápidas, seguras y optimizadas para generar clientes. Solicita tu web hoy.",
+    
 }
+
 
 export default function PaginaWeb() {
     return (
@@ -26,11 +28,18 @@ export default function PaginaWeb() {
                     <div className="h-[calc(100vh-6rem)] flex flex-col-reverse lg:flex-row items-center gap-7">
                         <div className="">
                             <div className="max-w-2xl">
-                                <h1 className="text-[#003697] xl:text-3xl text-xl font-extrabold">Página web y Marketing digital en Lima</h1>
-                                <h2 className="text-slate-700 text-2xl xl:text-5xl font-extrabold">Creamos sitios web modernos y estratégicos, diseñados en lo que realmente necesita</h2>
-                                <p className="mt-8">No competimos por precio. Analizamos tus objetivos en función de tu inversión para generar resultados concretos.</p>
+                                <h1 className="text-[#003697] xl:text-3xl text-xl font-extrabold">Diseño y Desarrollo Web en Lima para empresas</h1>
+                                <h2 className="text-slate-700 text-2xl xl:text-5xl font-extrabold">
+                                    <span className="max-sm:hidden">Genera clientes, posiciona tu marca y escala tu negocio.</span>
+                                    <span className="sm:hidden">Páginas web estratégicas y optimizadas para generar clientes reales.</span>
+                                </h2>
+                                <p className="max-sm:mt-2 mt-8">
+                                    <span className="max-sm:hidden">No competimos por precio. Competimos por estrategia, rendimiento y retorno de inversión.</span>
+                                    <span className="sm:hidden">Respuesta en menos de 24 horas.</span>
+                                </p>
                                 <div className="mx-auto mt-5 mb-8 lg:mb-10 lg:mt-10 text-center lg:text-left">
-                                    <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20vi%20tu%20página%20web%20y%20quiero%20comunicar%20mis%20necesidades." className="">Comunicar mis necesidades</ButtonLink>
+                                    <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20vi%20tu%20página%20web%20y%20quiero%20comunicar%20mis%20necesidades." className="max-sm:hidden">Comunicar mis necesidades</ButtonLink>
+                                    <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20vi%20tu%20página%20web%20y%20quiero%20comunicar%20mis%20necesidades." className="sm:hidden">Hablar por WhatsApp</ButtonLink>
                                 </div>
                             </div>
                         </div>
@@ -49,10 +58,10 @@ export default function PaginaWeb() {
             <section className="text-slate-700 py-12 bg-white">
                 <Wrapper>
                     <div className="">
-                        <h3 className="font-extrabold text-[#003697] text-3xl md:text-4xl text-center">¿Qué podemos hacer por ti ?</h3>
-                        <div className="max-w-96 mx-auto">
+                        <h3 className="font-extrabold text-[#003697] text-3xl md:text-4xl text-center">Servicios de diseño y desarrollo web profesional</h3>
+                        <div className="max-w-[600px] mx-auto">
                             <p className="text-center mt-2">
-                                Trabajamos con un enfoque práctico y estratégico para ayudarte a crecer en el entorno digital.
+                                Trabajamos con un enfoque práctico y estratégico para ayudar a empresas en Lima a crecer en el entorno digital mediante soluciones web optimizadas y orientadas a resultados.
                             </p>
                         </div>
                         <div className="flex flex-col md:flex-row gap-9 items-center lg:justify-between mt-6 lg:-mt-10">
@@ -72,10 +81,14 @@ export default function PaginaWeb() {
 
                                 </div>
                                 <div className="p-5 pb-7">
-                                    <h4 className="font-extrabold text-[#003697] text-2xl md:text-3xl">Presencia en Línea</h4>
-                                    <p>Potenciamos tu visibilidad en internet para fortalecer tu reputación y credibilidad.</p>
+                                    <h3 className="font-extrabold text-[#003697] text-2xl md:text-3xl ">
+                                        <span className="hidden sm:inline">Presencia en Línea para Empresas</span>
+                                        <span className="sm:hidden">Presencia en Línea</span>
+                                    </h3>
+                                    <p className="mt-1.5">Construimos una presencia digital sólida mediante sitios web optimizados,
+                                        estructura SEO correcta y contenido estratégico, permitiendo que tu empresa
+                                        sea visible, confiable y competitiva en Google.</p>
                                 </div>
-
                                 <IconWhatsApp />
                             </div>
                             <div className="w-[290px] shadow-xl transition-all duration-300 hover:shadow-2xl rounded-lg relative lg:mt-28">
@@ -93,8 +106,13 @@ export default function PaginaWeb() {
                                     </video>
                                 </div>
                                 <div className="p-5 pb-7">
-                                    <h4 className="font-extrabold text-[#003697] text-2xl md:text-3xl">Diseño y Desarrollo</h4>
-                                    <p>Construimos sitios web adaptados a la identidad, estilo y necesidades funcionales de tu negocio.</p>
+                                    <h3 className="font-extrabold text-[#003697] text-2xl md:text-3xl">
+                                        <span className="hidden sm:inline">Diseño y Desarrollo Web Profesional</span>
+                                        <span className="sm:hidden">Diseño y Desarrollo Web</span>
+                                    </h3>
+                                    <p className="mt-1.5">Diseñamos y desarrollamos páginas web modernas, rápidas y seguras,adaptadas a los objetivos de cada empresa.
+                                        Aplicamos buenas prácticas de desarrollo web, experiencia de usuario (UX)
+                                        y SEO técnico para generar tráfico calificado y conversiones reales.</p>
                                 </div>
                                 <IconWhatsApp />
                             </div>
@@ -112,8 +130,13 @@ export default function PaginaWeb() {
                                     </video>
                                 </div>
                                 <div className="p-5 pb-7">
-                                    <h4 className="font-extrabold text-[#003697] text-2xl md:text-3xl">Marketing Digital</h4>
-                                    <p>Potenciamos tu visibilidad en internet para fortalecer tu reputación y credibilidad.
+                                    <h3 className="font-extrabold text-[#003697] text-2xl md:text-3xl">
+                                        <span className="hidden sm:inline">Marketing Digital Estratégico</span>
+                                        <span className="sm:hidden">Marketing Digital</span>
+                                    </h3>
+                                    <p className="mt-1.5">Potenciamos tu sitio web con estrategias de marketing digital orientadas
+                                        a resultados, mejorando el tráfico, la conversión y la captación de clientes
+                                        a través de canales digitales optimizados.
                                     </p>
                                 </div>
                                 <IconWhatsApp />
@@ -121,7 +144,7 @@ export default function PaginaWeb() {
                         </div>
                         <div className="mt-20 text-center">
                             <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman%2C%20lo%20que%20necesito%20es%20un%20servicio%20que%20me%20ayude%20a%E2%80%A6
-">¿No está lo que necesitas? Conversemos</ButtonLink>
+">¿No estás seguro de qué necesitas? Conversemos</ButtonLink>
                         </div>
                     </div>
                 </Wrapper>
@@ -129,8 +152,8 @@ export default function PaginaWeb() {
             <section className="py-12 text-slate-700">
                 <Wrapper>
                     <div>
-                        <h3 className="font-extrabold text-[#003697] text-3xl md:text-4xl">Conoce el flujo digital</h3>
-                        <p>El conjunto de varias etapas ayudara a tu negocio o empresa a obtener lo que realmente necesita.</p>
+                        <h2 className="font-extrabold text-[#003697] text-3xl md:text-4xl">Conoce el flujo digital</h2>
+                        <p>El conjunto de acciones digitales permite a una empresa conectar con su público, atraer clientes y convertir oportunidades en resultados medibles.</p>
                         <div className="mt-10">
                             <div className="flex space-x-2">
                                 <HorizontalAccordion>
@@ -144,9 +167,9 @@ export default function PaginaWeb() {
                                             <div className="flex md:flex-col md:w-72">
                                                 <TbCircleNumber1Filled className="h-16 w-16 text-[#003697]" />
                                                 <div className="flex flex-col h-full justify-center ml-3 md:ml-0">
-                                                    <h6 className="hidden md:block text-3xl text-[#003697]">Muéstrate</h6>
+                                                    <h6 className="hidden md:block text-3xl text-[#003697]">Impulsamos</h6>
                                                     <p>
-                                                        Impulsa tus ventas con estrategias efectivas y campañas inteligentes. </p>
+                                                        Tus ventas con estrategias efectivas y campañas inteligentes. </p>
                                                 </div>
                                             </div>
                                             <div className="flex flex-nowrap gap-5 overflow-x-auto md:overflow-visible">
@@ -201,7 +224,7 @@ export default function PaginaWeb() {
                                     </HorizontalAccordionItem>
                                     <HorizontalAccordionItem
                                         index={2}
-                                        label="Informa"
+                                        label="Impacta"
                                         iconClosed={<TbCircleNumber2Filled className="border-2 border-white rounded-full w-10 h-10 md:h-12 md:w-12" />}
                                         iconOpen={<FaArrowCircleUp className="p-[3px] border-2 border-white rounded-full mt-5px mr-[2px] md:mb-[0px] w-[35px] h-[35px] md:h-[48px] md:w-[48px] rotate-180 md:rotate-90" />}
                                     >
@@ -209,8 +232,8 @@ export default function PaginaWeb() {
                                             <div className="flex md:flex-col md:w-44">
                                                 <TbCircleNumber2Filled className="h-16 w-16 text-[#003697]" />
                                                 <div className="flex flex-col h-full justify-center ml-3 md:ml-0">
-                                                    <h6 className="hidden md:block text-3xl text-[#003697]">Informa</h6>
-                                                    <p>Comunica a tu nicho con autoridad y confianza a través de una web moderna, funcional y adaptada a tu negocio.
+                                                    <h6 className="hidden md:block text-3xl text-[#003697]">Impacta</h6>
+                                                    <p>A tu nicho con autoridad y confianza a través de una web moderna, funcional y adaptada a tu negocio.
                                                     </p>
                                                 </div>
                                             </div>
@@ -246,7 +269,7 @@ export default function PaginaWeb() {
                                     </HorizontalAccordionItem>
                                     <HorizontalAccordionItem
                                         index={3}
-                                        label="Atiende"
+                                        label="Convierte"
                                         iconClosed={<TbCircleNumber3Filled className="border-2 border-white rounded-full w-10 h-10 md:h-12 md:w-12" />}
                                         iconOpen={<FaArrowCircleUp className="p-[3px] border-2 border-white rounded-full mt-5px mr-[2px] md:mb-[0px] w-[35px] h-[35px] md:h-[48px] md:w-[48px] rotate-180 md:rotate-90" />}
                                     >
@@ -254,8 +277,8 @@ export default function PaginaWeb() {
                                             <div className="flex md:flex-col md:w-48">
                                                 <TbCircleNumber3Filled className="h-16 w-16 text-[#003697]" />
                                                 <div className="flex flex-col h-full justify-center ml-3 md:ml-0">
-                                                    <h6 className="hidden md:block text-3xl text-[#003697]">Atiende</h6>
-                                                    <p>Brinda una atención rápida y personalizada con herramientas digitales que facilitan la comunicación con tus clientes.</p>
+                                                    <h6 className="hidden md:block text-3xl text-[#003697]">Convierte</h6>
+                                                    <p>Brinda una atención rápida y personalizada con herramientas digitales que facilitan a cerrar las ventas.</p>
                                                 </div>
                                             </div>
                                             <div className="flex flex-nowrap gap-5 overflow-x-auto md:overflow-visible">
@@ -296,8 +319,8 @@ export default function PaginaWeb() {
             <section className="text-slate-700 py-12">
                 <Wrapper>
                     <div>
-                        <h3 className="font-extrabold text-[#003697] text-3xl md:text-4xl text-center">Últimos proyectos</h3>
-                        <p className="text-center mt-2">Valoramos y amamos cada trabajo que realizamos, buscando siempre funcionalidad y estética.</p>
+                        <h2 className="font-extrabold text-[#003697] text-3xl md:text-4xl text-center">Últimos proyectos</h2>
+                        <p className="text-center mt-2">Valoramos y amamos cada proyecto que realizamos, buscando siempre funcionalidad, rendimiento y estética alineados a los objetivos de cada cliente.</p>
                         <div className="mt-10">
                             <Carousel></Carousel>
                         </div>
@@ -308,7 +331,7 @@ export default function PaginaWeb() {
                 <Wrapper>
                     <div className="bg-white rounded-lg shadow-lg flex gap-5 flex-col md:flex-row justify-between">
                         <div className="md:w-1/2 p-9">
-                            <h4 className="text-[#003697] text-3xl md:text-4xl font-semibold">¿Por qué elegirnos?</h4>
+                            <h2 className="text-[#003697] text-3xl md:text-4xl font-semibold">¿Por qué elegirnos?</h2>
                             <p className="mt-4">Somos un equipo multidisciplinario con experiencia en tecnologías clave, orientado a resolver necesidades reales de negocio.
                                 <br /><br />
                                 Escríbenos por WhatsApp para escucharte y ofrecerte una solución personalizada.</p>
@@ -323,7 +346,7 @@ export default function PaginaWeb() {
             <section className="text-slate-700 py-12">
                 <Wrapper>
                     <div>
-                        <h4 className="text-[#003697] text-3xl md:text-4xl font-semibold text-center">Preguntas frecuentes (FAQ)</h4>
+                        <h2 className="text-[#003697] text-3xl md:text-4xl font-semibold text-center">Preguntas frecuentes (FAQ)</h2>
                         <div className="mt-10">
                             <Faq></Faq>
                             <div className="text-center mt-5">
@@ -334,7 +357,7 @@ export default function PaginaWeb() {
                     </div>
                 </Wrapper>
             </section>
-            <FloatingWhatsApp message={floatingMessage}/>
+            <FloatingWhatsApp message={floatingMessage} />
         </>
     )
 }

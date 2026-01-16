@@ -14,8 +14,7 @@ export default function Footer() {
                     <Image alt="" src="/images/Brishman CL logo.svg" width={70} height={70} />
                 </div>
                 <p className="text-gray-700 text-center">
-                    Somos una empresa de desarrollo de software, especializada en
-                    soluciones digitales para empresas.
+                    Somos una empresa de desarrollo de software especializada en soluciones digitales para empresas.
                 </p>
                 <div className="flex justify-center mt-3">
                     <a href="">
