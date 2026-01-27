@@ -8,6 +8,7 @@ import ButtonLink from "@/app/_components/ButtonLink";
 import type { Metadata } from 'next';
 import FloatingWhatsApp from "@/app/ui/elements/floatingWhatsApp";
 import { LocalBusinessInstance } from "../app/_schemas/localBusiness";
+import ClientsCompanies from "@/app/_sections/clientsCompanies";
 
 const floatingMessage = "¡Hola BrishmanCL! Estoy buscando ayuda para digitalizar mi negocio y vi que ofrecen páginas web, sistemas y marketing. ¿Podemos conversar?";
 
@@ -56,6 +57,7 @@ export default function Home() {
           </div>
         </div>
         <Services />
+        <ClientsCompanies />
         <TrustSocialProof />
         <OurTeam />
         <FormSection></FormSection>

@@ -105,11 +105,9 @@ export default function PaginaWeb() {
                     </div>
                 </Wrapper>
             </section>
-            <section className="bg-white py-2">
-                <Wrapper>
-                    <ClientsCompanies/>
-                </Wrapper>
-            </section>
+
+            <ClientsCompanies />
+            
             <section className="text-slate-700 py-12 bg-white">
                 <Wrapper>
                     <div className="">

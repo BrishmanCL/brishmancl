@@ -1,8 +1,8 @@
 'use client'
 
-import { motion } from 'framer-motion'
-import Image from 'next/image'
-
+import { motion } from 'framer-motion';
+import Image from 'next/image';
+import Wrapper from "@/app/_components/wrapper";
 const logos = [
   '/images/clients/Cano-Contratista-S.A.C. - Cliente.png',
   '/images/clients/Applus - Cliente.png',
@@ -13,29 +13,33 @@ const logos = [
 
 export default function ClientsCompanies() {
   return (
-    <div className="overflow-hidden w-full">
-      <motion.div
-        className="flex gap-28 max-md:gap-14"
-        animate={{ x: ['0%', '-50%'] }}
-        transition={{
-          repeat: Infinity,
-          repeatType: 'loop',
-          ease: 'linear',
-          duration: 20,
-        }}
-      >
-        {[...logos, ...logos].map((logo, i) => (
-          <div key={i} className="flex items-center min-w-[150px]">
-            <Image
-              src={logo}
-              alt={`Cliente ${i}`}
-              width={150}
-              height={75}
-              className="object-contain hover:grayscale-0 transition"
-            />
-          </div>
-        ))}
-      </motion.div>
-    </div>
+    <section className='bg-white py-2'>
+      <Wrapper>
+        <div className="overflow-hidden w-full">
+          <motion.div
+            className="flex gap-28 max-md:gap-14"
+            animate={{ x: ['0%', '-50%'] }}
+            transition={{
+              repeat: Infinity,
+              repeatType: 'loop',
+              ease: 'linear',
+              duration: 20,
+            }}
+          >
+            {[...logos, ...logos].map((logo, i) => (
+              <div key={i} className="flex items-center min-w-[150px]">
+                <Image
+                  src={logo}
+                  alt={`Cliente ${i}`}
+                  width={150}
+                  height={75}
+                  className="object-contain hover:grayscale-0 transition"
+                />
+              </div>
+            ))}
+          </motion.div>
+        </div>
+      </Wrapper>
+    </section>
   )
 }
