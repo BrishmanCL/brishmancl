@@ -1,12 +1,3 @@
-/*
-export default function ClientsCompanies(){
-    return (
-        <div>
-            Logos de las empresas
-        </div>
-    );
-}
-*/
 'use client'
 
 import { motion } from 'framer-motion'
