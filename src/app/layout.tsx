@@ -10,9 +10,9 @@ const globalSchema = {
   "@type": "WebPage",
   "@id": "https://brishmancl.com/#webpage",
   "url": "https://brishmancl.com",
-  "name": "Brishman CL S.A.C",
+  "name": "Brishman CL S.A.C",  
   "isPartOf": {
-    "@id": "https://brishmancl.com/#website"
+    "@id": "https://brishmancl.com/"
   },
   "@graph": [
     {
@@ -21,7 +21,7 @@ const globalSchema = {
       "name": "Brishman CL S.A.C",
       "legalName": "Brishman CL S.A.C",
       "url": "https://brishmancl.com",
-      "logo": "https://brishmancl.com/logo.png",
+      "logo": "https://brishmancl.com/images/Brishman%20CL%20SAC.svg",
       "sameAs": [
         "https://www.facebook.com/",
         "https://www.linkedin.com/"
@@ -32,7 +32,7 @@ const globalSchema = {
       "@id": "https://brishmancl.com/#business",
       "name": "Brishman CL S.A.C",
       "url": "https://brishmancl.com",
-      "logo": "https://brishmancl.com/logo.png",
+      "logo": "https://brishmancl.com/images/Brishman%20CL%20SAC.svg",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Lima",
@@ -78,14 +78,6 @@ export default function RootLayout({
       <body
         className={`${ptSans.className} antialiased bg-gradient-to-r from-slate-100 via-slate-300 to-slate-100 text-white`}
       >
-        <Script
-          id="schema-global"
-          type="application/ld+json"
-          strategy="beforeInteractive"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(globalSchema),
-          }}
-        />
         {/* Google Tag Manager */}
         <Script id="gtm-script" strategy="afterInteractive">
           {`

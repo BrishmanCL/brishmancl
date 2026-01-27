@@ -3,6 +3,7 @@ import Wrapper from "@/app/_components/wrapper";
 import Image from "next/image";
 import ButtonLink from "@/app/_components/ButtonLink";
 import type { Metadata } from 'next';
+import Script from "next/script";
 import { HorizontalAccordion, HorizontalAccordionItem } from "./component/DisclousureFlow";
 import { TbCircleNumber1Filled, TbCircleNumber2Filled, TbCircleNumber3Filled } from "react-icons/tb";
 import { FaArrowCircleUp } from "react-icons/fa";
@@ -11,54 +12,40 @@ import Faq from "./component/Faq";
 import IconWhatsApp from "@/app/ui/elements/iconWhatsApp";
 import FloatingWhatsApp from "@/app/ui/elements/floatingWhatsApp";
 
-const floatingMessage = "¡Hola equipo BrishmanCL! Vi su web y quiero saber más sobre cómo podrían ayudar a mi negocio a crecer online.";
+//sections
+import ClientsCompanies from "../_sections/clientsCompanies";
 
-const faqSchema = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-        {
-            "@type": "Question",
-            "name": "¿Cuánto cuesta una página web en Lima?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "El precio de una página web en Lima varía según las necesidades de tu negocio. En general, los costos dependen del tipo de sitio (informativo, tienda online, landing page), el número de secciones, funcionalidades requeridas y nivel de personalización. Nuestros planes se adaptan a todo tipo de empresas, desde emprendedores hasta marcas consolidadas. Escríbenos y te brindamos una cotización clara y sin compromiso."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "¿Qué incluye el servicio de marketing digital?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Nuestro servicio de marketing digital en Lima incluye:\n\n- Estrategia personalizada, basada en tus objetivos.\n- Gestión de campañas publicitarias (Meta Ads y Google Ads).\n- Optimización SEO para mejorar tu visibilidad en buscadores.\n- Contenido creativo para redes sociales.\n- Reportes y seguimiento para medir resultados y escalar.\n\nCreamos campañas enfocadas en resultados reales: atraer más clientes y aumentar tus ventas."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "¿Cómo sé si necesito rediseñar mi web?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Podrías necesitar un rediseño web si:\n\n- Tu sitio tarda en cargar o no se adapta bien a celulares.\n- Tu imagen ya no representa a tu marca actual.\n- No estás recibiendo visitas ni contactos desde tu web.\n- Tiene un diseño desactualizado o poco profesional.\n\nUna web moderna no solo mejora la experiencia del usuario, también potencia tu posicionamiento en Google y transmite mayor confianza."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "¿Cuánto tiempo demora el desarrollo?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "El tiempo de desarrollo depende de la complejidad y la cantidad de contenido, pero en promedio un sitio web sencillo puede estar listo en 2 a 4 semanas."
-            }
-        },
-        {
-            "@type": "Question",
-            "name": "¿Cuánto tiempo demora el desarrollo?",
-            "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Ofrecemos planes de mantenimiento opcionales que incluyen actualizaciones, soporte y mejoras continuas."
-            }
-        }
-    ]
-};
+//Schema
+import { WebPage } from "../_schemas/webPage";
+import { FaqPage } from "../_schemas/faqPage";
+
+const webPageSchema = new WebPage(
+    "webpage-paginas-web-empresas-lima",
+    "/paginas-web-empresas-lima",
+    "Diseño y Desarrollo Web en Lima para Empresas | Brishman CL",
+    "Diseño y desarrollo web profesional en Lima para empresas. Páginas rápidas, seguras y optimizadas para generar clientes. Solicita tu web hoy.",
+    "paginas-web-empresas-lima"
+)
+
+const fapPageSchema = new FaqPage();
+fapPageSchema.Question({
+    question: "¿Cuánto cuesta una página web en Lima?",
+    response: "El precio de una página web en Lima varía según las necesidades de tu negocio. En general, los costos dependen del tipo de sitio (informativo, tienda online, landing page), el número de secciones, funcionalidades requeridas y nivel de personalización. Nuestros planes se adaptan a todo tipo de empresas, desde emprendedores hasta marcas consolidadas. Escríbenos y te brindamos una cotización clara y sin compromiso."
+}).Question({
+    question: "¿Qué incluye el servicio de marketing digital?",
+    response: "Nuestro servicio de marketing digital en Lima incluye:\n\n- Estrategia personalizada, basada en tus objetivos.\n- Gestión de campañas publicitarias (Meta Ads y Google Ads).\n- Optimización SEO para mejorar tu visibilidad en buscadores.\n- Contenido creativo para redes sociales.\n- Reportes y seguimiento para medir resultados y escalar.\n\nCreamos campañas enfocadas en resultados reales: atraer más clientes y aumentar tus ventas."
+}).Question({
+    question: "¿Cómo sé si necesito rediseñar mi web?",
+    response: "Podrías necesitar un rediseño web si:\n\n- Tu sitio tarda en cargar o no se adapta bien a celulares.\n- Tu imagen ya no representa a tu marca actual.\n- No estás recibiendo visitas ni contactos desde tu web.\n- Tiene un diseño desactualizado o poco profesional.\n\nUna web moderna no solo mejora la experiencia del usuario, también potencia tu posicionamiento en Google y transmite mayor confianza."
+}).Question({
+    question: "¿Cuánto tiempo demora el desarrollo?",
+    response: "El tiempo de desarrollo depende del tipo de sitio web que necesites. En general, una página web básica puede estar lista en 1-2 semanas, mientras que un sitio más complejo (como una tienda online o un sistema personalizado) puede tomar entre 3-6 semanas. Te proporcionamos un cronograma detallado desde el inicio del proyecto hasta la entrega final."
+}).Question({
+    question: "¿Cuánto tiempo demora el desarrollo?",
+    response: "Ofrecemos planes de mantenimiento opcionales que incluyen actualizaciones, soporte y mejoras continuas."
+});
+
+const floatingMessage = "¡Hola equipo BrishmanCL! Vi su web y quiero saber más sobre cómo podrían ayudar a mi negocio a crecer online.";
 
 export const metadata: Metadata = {
     title: "Diseño y Desarrollo Web en Lima para Empresas | Brishman CL",
@@ -66,14 +53,23 @@ export const metadata: Metadata = {
 
 }
 
-
 export default function PaginaWeb() {
     return (
         <>
-            <script
+            <Script
+                id="schema-global"
                 type="application/ld+json"
+                strategy="beforeInteractive"
                 dangerouslySetInnerHTML={{
-                    __html: JSON.stringify(faqSchema),
+                    __html: JSON.stringify(webPageSchema.JsonLd()),
+                }}
+            />
+            <Script
+                id="schema-global"
+                type="application/ld+json"
+                strategy="beforeInteractive"
+                dangerouslySetInnerHTML={{
+                    __html: JSON.stringify(fapPageSchema.JsonLd()),
                 }}
             />
 
@@ -92,7 +88,7 @@ export default function PaginaWeb() {
                                     <span className="sm:hidden">Respuesta en menos de 24 horas.</span>
                                 </p>
                                 <div className="mx-auto mt-5 mb-8 lg:mb-10 lg:mt-10 text-center lg:text-left">
-                                    <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20vi%20tu%20página%20web%20y%20quiero%20comunicar%20mis%20necesidades." className="max-sm:hidden">Comunicar mis necesidades</ButtonLink>
+                                    <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20vi%20tu%20página%20web%20y%20quiero%20comunicar%20mis%20necesidades." className="max-sm:hidden">Solicitar cotización</ButtonLink>
                                     <ButtonLink href="https://wa.me/51956961075?text=Hola%20Brishman,%20vi%20tu%20página%20web%20y%20quiero%20comunicar%20mis%20necesidades." className="sm:hidden">Hablar por WhatsApp</ButtonLink>
                                 </div>
                             </div>
@@ -107,6 +103,11 @@ export default function PaginaWeb() {
                             />
                         </div>
                     </div>
+                </Wrapper>
+            </section>
+            <section className="bg-white py-2">
+                <Wrapper>
+                    <ClientsCompanies/>
                 </Wrapper>
             </section>
             <section className="text-slate-700 py-12 bg-white">
